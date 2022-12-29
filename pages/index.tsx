@@ -13,16 +13,7 @@ type Props = {
 };
 
 const Homepage = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
-  const router = useRouter();
   const { t } = useTranslation("common");
-
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const onToggleLanguageClick = (newLocale: string) => {
-    const { pathname, asPath, query } = router;
-    router.push({ pathname, query }, asPath, { locale: newLocale });
-  };
-
-  const changeTo = router.locale === "en" ? "pt-BR" : "en";
 
   return (
     <>
@@ -30,7 +21,7 @@ const Homepage = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
         <Header heading={t("h1")} title={t("title")} />
         <div className="mx-auto w-full max-w-6xl grow h-full">
           <h2 className="mt-4 mb-6 text-4xl font-bold">Git Tutorial</h2>
-          <p>This guide will teach you how to start using Git. </p>
+          <p>{t("description")} </p>
           <h3 className="text-3xl capitalize my-10">terminal basics</h3>
           <P>
             Create a new folder: <Code>mkdir folder_name</Code>
