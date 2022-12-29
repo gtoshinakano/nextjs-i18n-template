@@ -17,9 +17,9 @@ const Homepage = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
 
   return (
     <>
-      <main className="w-screen flex flex-col min-h-screen">
+      <main className="w-screen flex flex-col min-h-screen bg-slate-100 gap-y-8">
         <Header heading={t("h1")} title={t("title")} />
-        <div className="mx-auto w-full max-w-6xl grow h-full">
+        <div className="mx-auto w-full max-w-6xl grow h-full p-8 bg-white rounded-xl">
           <h2 className="mt-4 mb-6 text-4xl font-bold">Git Tutorial</h2>
           <p>{t("description")} </p>
           <h3 className="text-3xl capitalize my-10">terminal basics</h3>
@@ -49,8 +49,8 @@ const Homepage = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
           </P>
           <P>Continues..</P>
         </div>
+        <Footer />
       </main>
-      <Footer />
     </>
   );
 };

@@ -23,7 +23,7 @@ export const Header: FC<Props> = ({ heading, title }) => {
       <Head>
         <title>{title}</title>
       </Head>
-      <div className="w-full px-10 py-2 bg-purple-300 flex">
+      <div className="w-full px-10 py-2 bg-slate-500 flex">
         <h1 className="grow font-semibold text-white text-lg">{heading}</h1>
         <a className="github" target="_blank" href="//github.com/gtoshinakano">
           <i className="typcn text-xl typcn-social-github-circular" />
@@ -31,7 +31,7 @@ export const Header: FC<Props> = ({ heading, title }) => {
       </div>
       <div className="fixed bottom-0 right-0 m-10">
         <button
-          className="px-3 py-2 bg-violet-300 rounded-lg text-white"
+          className="px-3 py-2 bg-slate-700 rounded-lg text-white"
           onClick={() => onToggleLanguageClick(changeTo)}
         >
           {t("change-locale", { changeTo })}
