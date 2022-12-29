@@ -1,23 +1,21 @@
-import Head from 'next/head'
-import type { FC } from 'react'
+import Head from "next/head";
+import type { FC } from "react";
 
 type Props = {
-  heading: string
-  title: string
-}
+  heading: string;
+  title: string;
+};
 
 export const Header: FC<Props> = ({ heading, title }) => (
   <>
     <Head>
       <title>{title}</title>
     </Head>
-    <h2>
-      next-i18next
-      <hr />
-    </h2>
-    <h1>{heading}</h1>
-    <a className="github" href="//github.com/i18next/next-i18next">
-      <i className="typcn typcn-social-github-circular" />
-    </a>
+    <div className="w-full px-10 py-2 bg-sky-500 flex">
+      <h1 className="grow">{heading}</h1>
+      <a className="github" target="_blank" href="//github.com/gtoshinakano">
+        <i className="typcn text-xl typcn-social-github-circular" />
+      </a>
+    </div>
   </>
-)
+);
