@@ -51,7 +51,7 @@ const Homepage = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
             Clone repository <Code>git clone repository_url</Code>
           </P>
           <P>
-            Check current working directory changes <Code>git</Code>
+            Check current working directory changes <Code>git status</Code>
           </P>
         </div>
         <Footer />
