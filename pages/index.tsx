@@ -47,7 +47,9 @@ const Homepage = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
           <P>
             Init a new repository in your folder: <Code>git init</Code>
           </P>
-          <P>Continues..</P>
+          <P>
+            Clone repository <Code>git clone repository_url</Code>
+          </P>
         </div>
         <Footer />
       </main>
