@@ -53,6 +53,21 @@ const Homepage = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
           <P>
             Check current working directory changes <Code>git status</Code>
           </P>
+          <P>
+            Add changes from working directory to the staging area <Code>git add</Code>
+          </P>
+          <P>
+            View the history of committed changes <Code>git log</Code>
+          </P>
+          <P>
+            Downloads a branch from a remote repository <Code>git pull</Code>
+          </P>
+          <P>
+            Upload a local branch to a repository <Code>git push</Code>
+          </P>
+          <P>
+            Creates a branch within a repository <Code>git branch</Code>
+          </P>
         </div>
         <Footer />
       </main>
